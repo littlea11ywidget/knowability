@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="assets/utilities.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="#main" class="pt-3 pl-5">Skip to Main Content</a>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="header links">
+        <a href="#main" class="btn-skip-link">Skip to Main Content</a>
+        <nav class="navbar navbar-expand-lg navbar-light" aria-label="header links">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a href="index.html" class="text-center d-block">
-                    <span class="d-block pt-5">Kathi Nordone</span>
-                    <span class="d-block pb-5">American Artist & Musician</span>
+                <a href="index.html" class="pl-3 d-lg-none">
+                    <img src="assets/logo.svg" class="logo" alt="Kathi Nordone, American Artist & Musician. Home">
                 </a>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav justify-content-between w-100">
@@ -26,7 +27,7 @@
                             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Gallery</a>
+                            <a class="nav-link" href="gallery.html">Gallery</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Music</a>
@@ -35,106 +36,111 @@
                             <a class="nav-link" href="#">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Press</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="#">About Kathi</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link d-inline" href="#"><img src="assets/facebook.png" class="social-logo" target="_blank" rel="noopener noreferrer" alt="Kathi's Facebook Page (opens in new tab)"></a>
-                            <a class="nav-link d-inline ml-2" href="#"><img src="assets/facebook.png" class="social-logo" target="_blank" rel="noopener noreferrer" alt="Kathi's Instagram Page (opens in new tab)"></a>
-                        </li>
                     </ul>
                 </div>
+                <a href="index.html" class="text-center d-none d-lg-block mt-4 py-5">
+                    <img src="assets/logo.svg" alt="Kathi Nordone American Artist and Musician" class="logo">
+                </a>
             </div>
         </nav>
     </header>
-    <main id="main" tabindex="-1" class="container">
-        <section>
-            <h2>Art</h2>
-            <p>Paintings and illustrations for sale.</p>
-            <a href="#">Visit the Gallery</a>
+    <main id="main" tabindex="-1">
+        <h1 class="text-uppercase text-center py-5">From Art to Song</h1>
+        <section class="container">
+            <h2 class="text-center py-2">Gallery</h2>
+            <p class="text-center py-1">Featured work rendered in ink, watercolor and oil.</p>
+            <div class="row">
+                <div class="col-md">
+                    <img src="assets/home_by_the_sea.jpg" alt="" class="homepage-img">
+                </div>
+                <div class="col-md">
+                    <img src="assets/flower_ink_bouquet.jpg" alt="" class="homepage-img">
+                </div>
+                <div class="col-md">
+                    <img src="assets/girl_by_the_sea.jpg" alt="" class="homepage-img">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center my-5">
+                <a href="gallery.html" class="btn btn-primary">Visit the gallery</a>
+            </div>
         </section>
-        <section>
-            <h2>Music</h2>
-            <p>Come amble with Kathi through the ruins of experience, with an optimism that defies long suffering. Her North East, West, Texas & Midcoast songs unearth pearls of love ~ where people are openhearted.</p>
-            <p>Featuring songs played with Ace in the Hole; George Straits band: with Terry Hale, Art Kidd and Rick Mcrae on guitar, mandolin and fiddle.</p>
-            <h3>Buy Music</h3>
-            <ul>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">Amazon Music</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">allmusic.com</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">Bandcamp</a></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Support the Artist</h2>
+        <section class="pt-5 pb-7 container-fluid music">
+            <div class="container">
+                <h2 class="text-center pb-2">Music</h2>
+                <div class="row">
+                    <div class="col-md-4 mt-n5">
+                        <img src="assets/Line_Drawing_littlest bird KB.jpg" alt="" class="homepage-img">
+                    </div>
+                    <div class="col-md-8">
+                        <p>Come amble with Kathi through the ruins of experience, with an optimism that defies long suffering. Her North East, West, Texas & Midcoast songs unearth pearls of love ~ where people are openhearted.</p>
+                        <p>Featuring songs played with Ace in the Hole; George Straits band: with Terry Hale, Art Kidd and Rick Mcrae on guitar, mandolin and fiddle.</p>
+                        <a href="#" class="btn btn-primary mt-2">Learn more about Kathi's music</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <div class="container d-flex justify-content-between">
-            <div class="d-flex">
-                <section class="pr-7">
-                    <h2 id="gallery">Gallery</h2>
+    <footer class="pt-5">
+        <div class="container">
+            <div class="row">
+                <section class="col-md">
+                    <a href="gallery.html" id="gallery" class="footer-main">Gallery</a>
                     <nav aria-labelledby="gallery">
                         <ul>
                             <li class="nav-item footer-link">
-                                <a href="#">Watercolors</a>
+                                <a href="#">Fine Line</a>
                             </li>
                             <li class="nav-item footer-link">
-                                <a href="#">Inks</a>
-                            </li>
-                            <li class="nav-item footer-link">
-                                <a href="#">Drawings</a>
-                            </li>
-                            <li class="nav-item footer-link">
-                                <a href="#">Oil</a>
+                                <a href="#">Colorful Inks</a>
                             </li>
                         </ul>
                     </nav>
                 </section>
-                <section class="pr-7">
-                <h2 id="music">Music</h2>
+                <section class="col-md">
+                    <a href="music.html" id="music" class="footer-main">Music</a>
                     <nav aria-labelledby="music">
                         <ul>
-                        <li class="nav-item footer-link">
-                            <a href="#">Watercolors</a>
-                        </li>
-                        <li class="nav-item footer-link">
-                            <a href="#">Inks</a>
-                        </li>
-                        <li class="nav-item footer-link">
-                            <a href="#">Drawings</a>
-                        </li>
-                        <li class="nav-item footer-link">
-                            <a href="#">Oil</a>
-                        </li>
+                            <li class="nav-item footer-link">
+                                <a href="#" target="_blank" rel="noopener noreferrer">Amazon Music</a>
+                            </li>
+                            <li class="nav-item footer-link">
+                                <a href="#" target="_blank" rel="noopener noreferrer">allmusic.com</a>
+                            </li>
+                            <li class="nav-item footer-link">
+                                <a href="#" target="_blank" rel="noopener noreferrer">Bandcamp</a>
+                            </li>
                         </ul>
                     </nav>
                 </section>
-                <section>
-                    <h2 id="shop">Shop</h2>
+                <section class="col-md">
+                    <a href="#" id="shop" class="footer-main">Shop</a>
                     <nav aria-labelledby="shop">
                         <ul>
                         <li class="nav-item footer-link">
-                            <a href="#">Watercolors</a>
+                            <a href="#">Shopify</a>
                         </li>
                         <li class="nav-item footer-link">
-                            <a href="#">Inks</a>
+                            <a href="#">Red Bubble</a>
                         </li>
                         </ul>
                     </nav>
                 </section>
+                <section class="col-md sitemap">
+                    <a href="sitemap.html" class="footer-main">Sitemap</a>
+                </section>
+                <section class="col-md-auto">
+                    <h2 class="footer-main">Connect</h2>
+                    <a class="d-inline" href="#"><img src="assets/facebook.png" class="social-logo" target="_blank" rel="noopener noreferrer" alt="Kathi's Facebook Page (opens in new tab)"></a>
+                    <a class="d-inline ml-3" href="#"><img src="assets/facebook.png" class="social-logo" target="_blank" rel="noopener noreferrer" alt="Kathi's Instagram Page (opens in new tab)"></a>
+                </section>
             </div>
-            <section>
-                <h2 class="text-center">Connect</h2>
-                <a class="nav-link d-inline" href="#"><img src="assets/facebook.png" class="social-logo" target="_blank" rel="noopener noreferrer" alt="Kathi's Facebook Page (opens in new tab)"></a>
-                <a class="nav-link d-inline ml-2" href="#"><img src="assets/facebook.png" class="social-logo" target="_blank" rel="noopener noreferrer" alt="Kathi's Instagram Page (opens in new tab)"></a>
-            </section>
+            <p class="text-center pt-5">&copy; 2020 all rights reserved. Kathi Nordone.com</p>
         </div>
-        <p class="text-right container">&copy; 2020 all rights reserved. Kathi Nordone.com</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
