@@ -62,6 +62,11 @@ footer nav {
     max-width: 33%;
 }
 
+.new-win {
+    width: 1rem;
+    margin-left: 0.5rem;
+}
+
 .social-logo {
     width: 33px;
     height: 33px;
@@ -114,5 +119,8 @@ footer nav {
 @media only screen and (max-width: 767px) {
     .sitemap {
         padding-bottom: 2rem;
+    }
+    .logo {
+        max-width: 50%;
     }
 }
