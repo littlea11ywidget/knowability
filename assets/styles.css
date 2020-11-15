@@ -96,6 +96,10 @@ h2.art {
     font-size: 1.5rem;
 }
 
+.footer-main:hover {
+    color: #FFF;
+}
+
 .footer-link {
     list-style-type: none;
     padding-bottom: 1rem;
@@ -159,14 +163,46 @@ label {
     width: 100%;
 }
 
+.errorMsg {
+    background-color: #fceded;
+    border: 1px solid #63110f;
+    color: #63110f;
+    font-weight: 700;
+    padding: 0.5rem;
+    display: block;
+}
+
 input, textarea {
     width: 100%;
     line-height: 2rem;
+    padding: 0.25rem;
+}
+
+input {
+    margin-bottom: 0.3rem;
+}
+
+textarea {
+    height: 10rem;
+}
+
+.sitemap-links {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.sitemap-links a {
+    font-size: 1.5rem;
+    color: #47637e;
+    display: block;
 }
 
 @media only screen and (max-width: 767px) {
     figcaption {
         padding-bottom: 2.5rem;
+    }
+    form {
+        width: 100%;
     }
     .sitemap {
         padding-bottom: 2rem;

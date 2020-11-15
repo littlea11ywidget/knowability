@@ -16,12 +16,12 @@ const resetErrorMessages = () => {
 
 const validateForm = () => {
     resetErrorMessages();
-    let fields = [{"fieldname": fullname, "label": "full name", "errorSpan": nameError}, {"fieldname": email, "label": "email", "errorSpan": emailError}, {"fieldname": subject, "label": "subject", "errorSpan": subjectError}, {"fieldname": message, "label": "message", "errorSpan": messageError}];
+    let fields = [{"fieldname": fullname, "errorMsg": "Enter your full name", "errorSpan": nameError}, {"fieldname": email, "errorMsg": "Enter a valid email address", "errorSpan": emailError}, {"fieldname": subject, "errorMsg": "Enter a subject", "errorSpan": subjectError}, {"fieldname": message, "errorMsg": "Enter a message", "errorSpan": messageError}];
     let errors = [];
     fields.forEach((field) => {
         if (field["fieldname"].value === '') {
             field.fieldname.setAttribute("aria-invalid", "true");
-            field.errorSpan.innerText = `You must enter your ${field.label}`;
+            field.errorSpan.innerHTML = `<span class="errorMsg"><i class="fas fa-times mr-1" aria-hidden="true"></i>${field.errorMsg}</span>`;
             errors.push(field.fieldname);
         }
     });
