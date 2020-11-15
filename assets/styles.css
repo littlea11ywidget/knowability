@@ -32,6 +32,11 @@ header .nav-link:hover, .active .nav-link {
     font-weight: 400;
 }
 
+header .navbar-light .navbar-toggler {
+    color: #424c4f;
+    border-color: #424c4f;
+}
+
 h1 {
     color: #631e5c;
     font-weight: 300;
@@ -92,8 +97,17 @@ h2.art {
     height: 33px;
 }
 
+.instagram-logo {
+    width: 45px;
+    height: 45px;
+}
+
 .footer-main {
     font-size: 1.5rem;
+}
+
+.footer-main:hover {
+    color: #FFF;
 }
 
 .footer-link {
@@ -145,6 +159,20 @@ h2.art {
     text-decoration: underline;
 }
 
+.white-background {
+    background-color: #FFF;
+    padding: 0 1rem 3rem;
+}
+
+.white-background a {
+    color: #47637e;
+    text-decoration: underline;
+}
+
+.white-background h3 {
+    padding-left: 1.25rem;
+}
+
 /* form styles */
 form {
     width: 40%;
@@ -159,14 +187,46 @@ label {
     width: 100%;
 }
 
+.errorMsg {
+    background-color: #fceded;
+    border: 1px solid #63110f;
+    color: #63110f;
+    font-weight: 700;
+    padding: 0.5rem;
+    display: block;
+}
+
 input, textarea {
     width: 100%;
     line-height: 2rem;
+    padding: 0.25rem;
+}
+
+input {
+    margin-bottom: 0.3rem;
+}
+
+textarea {
+    height: 10rem;
+}
+
+.sitemap-links {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.sitemap-links a {
+    font-size: 1.5rem;
+    color: #47637e;
+    display: block;
 }
 
 @media only screen and (max-width: 767px) {
     figcaption {
         padding-bottom: 2.5rem;
+    }
+    form {
+        width: 100%;
     }
     .sitemap {
         padding-bottom: 2rem;
@@ -179,5 +239,11 @@ input, textarea {
         margin-bottom: 3rem;
         margin-left: auto;
         margin-right: auto;
+    }
+    header .nav-link:hover, header .navbar-nav .active .nav-link {
+        border: none;
+        color: #631e5c !important;
+        text-decoration: underline;
+        font-weight: 700;
     }
 }
