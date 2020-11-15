@@ -145,6 +145,25 @@ h2.art {
     text-decoration: underline;
 }
 
+/* form styles */
+form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+}
+
+.form-section {
+    width: 100%;
+}
+
+input, textarea {
+    width: 100%;
+    line-height: 2rem;
+}
+
 @media only screen and (max-width: 767px) {
     figcaption {
         padding-bottom: 2.5rem;
