@@ -30,6 +30,7 @@ const validateForm = () => {
         errors[0].focus();
         return false;
     } else {
+        window.location.href = 'a11ycats2020.github.io/knowability/index.html';
         return true;
     }
      
