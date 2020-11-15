@@ -27,7 +27,7 @@ header .nav-link {
     border-top: 3px solid transparent;
 }
 
-header .nav-link:hover {
+header .nav-link:hover, .active .nav-link {
     border-color: #631e5c;
     font-weight: 400;
 }
@@ -72,6 +72,11 @@ footer nav {
     max-width: 33%;
 }
 
+h2.art {
+    color: #631e5c;
+    font-size: 1.3rem;
+}
+
 .hover-line:hover a, .hover-line:focus {
     color: #FFF;
     text-decoration: underline;
@@ -94,10 +99,6 @@ footer nav {
 .footer-link {
     list-style-type: none;
     padding-bottom: 1rem;
-}
-
-.homepage-img {
-    max-width: 100%;
 }
 
 .navbar .container {
@@ -131,7 +132,23 @@ footer nav {
     opacity: 0;
 }
 
+.gallery-links {
+    background-color: #eef4fa;
+}
+
+.gallery-links h2 {
+    font-size: 1rem;
+}
+
+.gallery-links a {
+    color: #47637e;
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 767px) {
+    figcaption {
+        padding-bottom: 2.5rem;
+    }
     .sitemap {
         padding-bottom: 2rem;
     }
