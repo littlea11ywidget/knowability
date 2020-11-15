@@ -3,8 +3,9 @@
     outline: 2px solid #000;
 }
 
-.btn:focus {
+.btn:hover, .btn:focus {
     background-color: #b8d5e8;
+    border-color: transparent;
     color: #000;
     text-decoration: underline;
 }
@@ -20,6 +21,15 @@ html, body {
 header, .music {
     background-image: url("cloud-background.jpg");
     background-size: cover;
+}
+
+header .nav-link {
+    border-top: 3px solid transparent;
+}
+
+header .nav-link:hover {
+    border-color: #631e5c;
+    font-weight: 400;
 }
 
 h1 {
@@ -60,6 +70,11 @@ footer nav {
 
 .logo {
     max-width: 33%;
+}
+
+.hover-line:hover a, .hover-line:focus {
+    color: #FFF;
+    text-decoration: underline;
 }
 
 .new-win {
