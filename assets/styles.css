@@ -221,6 +221,15 @@ textarea {
     display: block;
 }
 
+@media only screen and (max-width: 991px) {
+    header .nav-link:hover, header .navbar-nav .active .nav-link {
+        border: none;
+        color: #631e5c !important;
+        text-decoration: underline;
+        font-weight: 700;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     figcaption {
         padding-bottom: 2.5rem;
@@ -239,11 +248,5 @@ textarea {
         margin-bottom: 3rem;
         margin-left: auto;
         margin-right: auto;
-    }
-    header .nav-link:hover, header .navbar-nav .active .nav-link {
-        border: none;
-        color: #631e5c !important;
-        text-decoration: underline;
-        font-weight: 700;
     }
 }
