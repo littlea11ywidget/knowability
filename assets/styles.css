@@ -18,7 +18,7 @@ html, body {
     color: #424c4f;
   }
 
-header, .music {
+header {
     background-image: url("cloud-background.jpg");
     background-size: cover;
 }
@@ -81,6 +81,18 @@ footer nav {
     font-size: 1.25rem;
     color: #3A4144;
     font-weight: bold;
+}
+
+.music figure {
+    background-color: #e9ecef;
+}
+
+.music audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel  {
+    background-color: #e9ecef;
+}
+
+.music figcaption {
+    font-size: 1.25em;
 }
 
 h2.art {
