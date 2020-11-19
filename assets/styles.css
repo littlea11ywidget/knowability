@@ -77,6 +77,12 @@ footer nav {
     max-width: 33%;
 }
 
+.music h3 {
+    font-size: 1.25rem;
+    color: #3A4144;
+    font-weight: bold;
+}
+
 h2.art {
     color: #631e5c;
     font-size: 1.3rem;
